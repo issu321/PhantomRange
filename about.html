@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | PhantomRange</title>
+<meta name="description" content="PhantomRange — Adaptive AI-Powered Cybersecurity Training Simulator by issu321">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<canvas id="bg-canvas"></canvas>
+<nav class="glass-nav">
+  <div class="nav-brand">
+    <span class="logo-icon">🔮</span>
+    <span class="logo-text">PHANTOM<span class="highlight">RANGE</span></span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html" class="nav-link">Home</a></li>
+<li><a href="features.html" class="nav-link">Features</a></li>
+<li><a href="simulation.html" class="nav-link">Simulation</a></li>
+<li><a href="docs.html" class="nav-link">Docs</a></li>
+<li><a href="about.html" class="nav-link active">About</a></li>
+
+    <li><a href="https://github.com/issu321/PhantomRange" target="_blank" class="nav-link github-link">GitHub</a></li>
+  </ul>
+  <div class="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<section class="about-hero">
+  <div class="badge glass-badge" style="margin-bottom:1.5rem;"><span class="pulse-dot"></span><span>Developed by issu321</span></div>
+  <h1 class="hero-title">ABOUT <span class="gradient-text">PHANTOMRANGE</span></h1>
+  <p class="hero-subtitle">A defensive-focused cybersecurity education platform built for the future.</p>
+</section>
+
+<section class="container">
+  <div class="about-grid">
+    <div class="about-card glass-panel">
+      <h3>🌐 Project Overview</h3>
+      <p>PhantomRange is a futuristic cybersecurity training simulator built entirely in Python. It generates dynamic virtual infrastructures, simulates safe educational attack chains, and deploys an AI Defender that adapts in real time. Designed for training, CTF practice, and portfolio demonstration, it delivers a cyberpunk-hacker aesthetic with production-grade architecture.</p>
+      <p style="margin-top:.8rem;"><strong>Repository:</strong> <a href="https://github.com/issu321/PhantomRange" target="_blank" style="color:var(--ng);">github.com/issu321/PhantomRange</a></p>
+    </div>
+    <div class="about-card glass-panel">
+      <h3>🧠 AI Defender Explained</h3>
+      <p>The AI Defender uses a <strong>RandomForestClassifier</strong> trained on synthetic feature vectors representing:</p>
+      <ul style="margin-top:.5rem;">
+        <li>Node security level (1-10)</li>
+        <li>Vulnerability count per node</li>
+        <li>Historical alert frequency</li>
+        <li>Current attack phase index</li>
+      </ul>
+      <p style="margin-top:.8rem;">When the simulation advances, the model predicts compromise probability per node. If risk exceeds the difficulty-adjusted threshold, the defender triggers actions such as virtual honeypot deployment, quarantine isolation, or authentication hardening.</p>
+    </div>
+    <div class="about-card glass-panel">
+      <h3>🛠️ Tech Stack</h3>
+      <p>Lightweight but production-grade architecture:</p>
+      <div class="tech-tags">
+        <span class="tech-tag">Python 3.11+</span>
+        <span class="tech-tag">Streamlit</span>
+        <span class="tech-tag">Plotly</span>
+        <span class="tech-tag">NetworkX</span>
+        <span class="tech-tag">scikit-learn</span>
+        <span class="tech-tag">NumPy</span>
+        <span class="tech-tag">Pandas</span>
+        <span class="tech-tag">Matplotlib</span>
+      </div>
+    </div>
+    <div class="about-card glass-panel">
+      <h3>🗺️ Future Roadmap</h3>
+      <ul>
+        <li>Plugin system for custom scenarios</li>
+        <li>Multiplayer CTF mode via WebSocket</li>
+        <li>LLM-powered narrative generation</li>
+        <li>MITRE ATT&CK framework mapping</li>
+        <li>Docker containerization</li>
+      </ul>
+    </div>
+    <div class="about-card glass-panel">
+      <h3>🤝 Contribution Guide</h3>
+      <p>Contributions are welcome. Fork the repository, create a feature branch, and open a Pull Request. The project is distributed under the MIT License.</p>
+      <p style="margin-top:.8rem;"><strong>Developer:</strong> <a href="https://github.com/issu321" target="_blank" style="color:var(--ng);">issu321</a></p>
+    </div>
+  </div>
+
+  <div class="disclaimer">
+    <h3>⚠️ Educational Disclaimer</h3>
+    <p>PhantomRange is a <strong>SAFE educational simulation only</strong>. No real malware is generated. No actual network exploitation occurs. All attack chains are abstracted and sandboxed. Intended for cybersecurity education, CTF training, and defensive skill development.</p>
+  </div>
+</section>
+
+
+<footer class="glass-footer">
+  <div class="footer-content">
+    <div class="footer-brand"><span class="logo-icon">🔮</span><span>PHANTOM<span class="highlight">RANGE</span></span></div>
+    <p class="footer-text">PhantomRange v1.0 | NeuralCTF Engine<br>Developed by <a href="https://github.com/issu321" target="_blank">issu321</a></p>
+    <div class="footer-links">
+      <a href="https://github.com/issu321/PhantomRange" target="_blank">Repository</a>
+      <a href="https://github.com/issu321" target="_blank">Developer</a>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

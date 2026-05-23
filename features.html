@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Features | PhantomRange</title>
+<meta name="description" content="PhantomRange — Adaptive AI-Powered Cybersecurity Training Simulator by issu321">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<canvas id="bg-canvas"></canvas>
+<nav class="glass-nav">
+  <div class="nav-brand">
+    <span class="logo-icon">🔮</span>
+    <span class="logo-text">PHANTOM<span class="highlight">RANGE</span></span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html" class="nav-link">Home</a></li>
+<li><a href="features.html" class="nav-link active">Features</a></li>
+<li><a href="simulation.html" class="nav-link">Simulation</a></li>
+<li><a href="docs.html" class="nav-link">Docs</a></li>
+<li><a href="about.html" class="nav-link">About</a></li>
+
+    <li><a href="https://github.com/issu321/PhantomRange" target="_blank" class="nav-link github-link">GitHub</a></li>
+  </ul>
+  <div class="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<section class="container" style="padding-top:8rem;">
+  <div class="section-header">
+    <h2 class="section-title">SYSTEM <span class="highlight">FEATURES</span></h2>
+    <p class="section-desc">Deep dive into every component of the NeuralCTF Engine</p>
+  </div>
+  <div class="features-grid">
+    <div class="feature-card glass-panel">
+      <div class="feature-icon">🎯</div>
+      <h3>Adaptive Simulation Engine</h3>
+      <p>Generates randomized virtual environments including Web Servers, Databases, API Gateways, Cloud Nodes, Workstations, and Firewalls. Choose from predefined scenarios like CyberHeist 2077, Neural Hospital, and Shadow Grid, or let the engine build a unique infrastructure every run.</p>
+      <div class="feature-glow"></div>
+    </div>
+    <div class="feature-card glass-panel">
+      <div class="feature-icon">🤖</div>
+      <h3>AI Defender System</h3>
+      <p>Powered by scikit-learn RandomForestClassifier. The defender trains on synthetic feature vectors (security level, vulnerability count, alert history, attack phase) and predicts compromise probability per node in real time. It dynamically raises authentication thresholds, deploys virtual honeypots, and recommends patches.</p>
+      <div class="feature-glow"></div>
+    </div>
+    <div class="feature-card glass-panel">
+      <div class="feature-icon">🕸️</div>
+      <h3>Interactive Network Graphs</h3>
+      <p>Plotly-powered force-directed topology visualization built on NetworkX. Nodes glow green when secure, yellow when alerted, and red when compromised. Hover for detailed node inspection including open ports, services, and vulnerability status.</p>
+      <div class="feature-glow"></div>
+    </div>
+    <div class="feature-card glass-panel">
+      <div class="feature-icon">⚔️</div>
+      <h3>Safe Attack Chain Simulation</h3>
+      <p>Six fully sandboxed educational phases: Reconnaissance, Scanning, Credential Discovery, Privilege Escalation, Lateral Movement, and Data Exfiltration. No real exploitation code is ever executed. Perfect for CTF training and defensive skill development.</p>
+      <div class="feature-glow"></div>
+    </div>
+    <div class="feature-card glass-panel">
+      <div class="feature-icon">📊</div>
+      <h3>Cyberpunk Dashboard</h3>
+      <p>Dark-mode Streamlit interface with neon green, blue, and red accents. Includes animated metric cards, risk heatmaps, a hacker-style terminal panel, and an AI system monitor. Fully responsive and internship-portfolio ready.</p>
+      <div class="feature-glow"></div>
+    </div>
+    <div class="feature-card glass-panel">
+      <div class="feature-icon">📁</div>
+      <h3>Exportable Reports</h3>
+      <p>Export complete session summaries as JSON with timestamps, metrics, and defender actions. Download node inventories as CSV for spreadsheet analysis. Generate matplotlib status distribution charts for presentations.</p>
+      <div class="feature-glow"></div>
+    </div>
+    <div class="feature-card glass-panel">
+      <div class="feature-icon">🧠</div>
+      <h3>Explainable AI</h3>
+      <p>Understand why the AI Defender makes decisions. Feature importance visualization shows exactly which factors (security level, vulnerability count, alerts, phase index) drive threat predictions and defensive recommendations.</p>
+      <div class="feature-glow"></div>
+    </div>
+    <div class="feature-card glass-panel">
+      <div class="feature-icon">🎮</div>
+      <h3>Difficulty Scaling</h3>
+      <p>Four difficulty tiers: Easy (5 nodes, low vulnerabilities), Medium (8 nodes, balanced), Hard (12 nodes, aggressive AI), and Insane (16 nodes, relentless defense). Each tier adjusts security levels, vulnerability density, and AI aggression.</p>
+      <div class="feature-glow"></div>
+    </div>
+    <div class="feature-card glass-panel">
+      <div class="feature-icon">🔧</div>
+      <h3>Patch Management</h3>
+      <p>Interactive vulnerability patching directly from the Network Graph. Click any discovered vulnerability on any node to remediate it. Watch security levels increase and threat levels decrease in real time.</p>
+      <div class="feature-glow"></div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="glass-footer">
+  <div class="footer-content">
+    <div class="footer-brand"><span class="logo-icon">🔮</span><span>PHANTOM<span class="highlight">RANGE</span></span></div>
+    <p class="footer-text">PhantomRange v1.0 | NeuralCTF Engine<br>Developed by <a href="https://github.com/issu321" target="_blank">issu321</a></p>
+    <div class="footer-links">
+      <a href="https://github.com/issu321/PhantomRange" target="_blank">Repository</a>
+      <a href="https://github.com/issu321" target="_blank">Developer</a>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Documentation | PhantomRange</title>
+<meta name="description" content="PhantomRange — Adaptive AI-Powered Cybersecurity Training Simulator by issu321">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<canvas id="bg-canvas"></canvas>
+<nav class="glass-nav">
+  <div class="nav-brand">
+    <span class="logo-icon">🔮</span>
+    <span class="logo-text">PHANTOM<span class="highlight">RANGE</span></span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html" class="nav-link">Home</a></li>
+<li><a href="features.html" class="nav-link">Features</a></li>
+<li><a href="simulation.html" class="nav-link">Simulation</a></li>
+<li><a href="docs.html" class="nav-link active">Docs</a></li>
+<li><a href="about.html" class="nav-link">About</a></li>
+
+    <li><a href="https://github.com/issu321/PhantomRange" target="_blank" class="nav-link github-link">GitHub</a></li>
+  </ul>
+  <div class="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<section class="container" style="padding-top:8rem;">
+  <div class="section-header">
+    <h2 class="section-title">DOCUMENTATION <span class="highlight">& GUIDE</span></h2>
+    <p class="section-desc">Everything you need to install, run, and master PhantomRange</p>
+  </div>
+  <div class="docs-grid">
+    <aside class="docs-sidebar glass-card">
+      <h4>CONTENTS</h4>
+      <ul class="docs-nav">
+        <li><a href="#install">Installation</a></li>
+        <li><a href="#usage">Usage</a></li>
+        <li><a href="#simulation">Simulation</a></li>
+        <li><a href="#difficulty">Difficulty</a></li>
+        <li><a href="#scenarios">Scenarios</a></li>
+        <li><a href="#troubleshoot">Troubleshooting</a></li>
+        <li><a href="#structure">Folder Structure</a></li>
+      </ul>
+    </aside>
+    <div class="docs-content">
+      <h3 id="install">Installation</h3>
+      <p>PhantomRange requires <strong>Python 3.11+</strong>. The installer automatically creates a virtual environment and installs all dependencies.</p>
+      <div class="code-block">
+        <button class="copy-btn" onclick="copyCode(this)" title="Copy">📋</button>
+        <pre><code>git clone https://github.com/issu321/PhantomRange.git
+cd PhantomRange
+bash install.sh</code></pre>
+      </div>
+      <p>On Windows, simply run:</p>
+      <div class="code-block">
+        <button class="copy-btn" onclick="copyCode(this)" title="Copy">📋</button>
+        <pre><code>install.bat</code></pre>
+      </div>
+      <div class="tip"><strong>Tip:</strong> The installer will create a <code>venv</code> folder, install requirements, and launch Streamlit automatically.</div>
+
+      <h3 id="usage">Usage</h3>
+      <p>Once launched, the Streamlit interface opens in your browser. The sidebar provides navigation across all modules:</p>
+      <ul>
+        <li><strong>Dashboard</strong> — Initialize simulations and view risk heatmaps</li>
+        <li><strong>Simulation Lab</strong> — Execute attack phases step by step or auto-run</li>
+        <li><strong>Network Graph</strong> — Inspect nodes, view vulnerabilities, and patch them live</li>
+        <li><strong>AI Defender</strong> — Review ML feature importance and defense logs</li>
+        <li><strong>Reports</strong> — Export JSON session dumps and CSV inventories</li>
+        <li><strong>Terminal</strong> — Real-time color-coded event stream</li>
+      </ul>
+
+      <h3 id="simulation">Simulation Overview</h3>
+      <p>Each simulation runs through six safe educational phases. All attack chains are abstracted and sandboxed.</p>
+      <ul>
+        <li><strong>Reconnaissance</strong> — Simulated information gathering about target infrastructure</li>
+        <li><strong>Scanning</strong> — Port and service enumeration on virtual nodes</li>
+        <li><strong>Credential Discovery</strong> — Educational weak credential detection</li>
+        <li><strong>Privilege Escalation</strong> — Simulated elevation of access</li>
+        <li><strong>Lateral Movement</strong> — Virtual traversal between network segments</li>
+        <li><strong>Data Exfiltration</strong> — Discovery of sensitive virtual data stores</li>
+      </ul>
+
+      <h3 id="difficulty">Difficulty Levels</h3>
+      <p>Choose the right challenge for your skill level:</p>
+      <ul>
+        <li><strong>Easy</strong> — 5 nodes, low vulnerability density, defensive AI</li>
+        <li><strong>Medium</strong> — 8 nodes, balanced challenge (default)</li>
+        <li><strong>Hard</strong> — 12 nodes, high vulnerability density, aggressive AI</li>
+        <li><strong>Insane</strong> — 16 nodes, maximum difficulty, relentless defense</li>
+      </ul>
+
+      <h3 id="scenarios">Predefined Scenarios</h3>
+      <p>Beyond random generation, three handcrafted scenarios are included in <code>scenarios.json</code>:</p>
+      <ul>
+        <li><strong>CyberHeist 2077</strong> — Financial institution with legacy mainframes and cloud APIs</li>
+        <li><strong>Neural Hospital</strong> — Medical IoT facility with patient data servers</li>
+        <li><strong>Shadow Grid</strong> — Power grid control systems with SCADA nodes</li>
+      </ul>
+
+      <h3 id="troubleshoot">Troubleshooting</h3>
+      <ul>
+        <li><strong>Port already in use:</strong> Streamlit will automatically prompt to run on another port.</li>
+        <li><strong>Module not found:</strong> Ensure the virtual environment is activated before running.</li>
+        <li><strong>CSS not loading:</strong> Verify that <code>assets/styles.css</code> exists in the project root.</li>
+        <li><strong>Streamlit not found:</strong> On Kali Linux, use the full venv path or <code>python -m streamlit</code>.</li>
+      </ul>
+
+      <h3 id="structure">Folder Structure</h3>
+      <div class="code-block">
+        <pre><code>PhantomRange/
+├── app.py              # Main application (backend + frontend)
+├── requirements.txt    # Python dependencies
+├── README.md           # Project documentation
+├── install.sh          # Linux / macOS installer
+├── install.bat         # Windows installer
+├── inputguide.md       # Usage guide
+├── scenarios.json      # Predefined scenarios
+├── .gitignore          # Git exclusions
+└── assets/
+    └── styles.css      # Cyberpunk Streamlit theme</code></pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="glass-footer">
+  <div class="footer-content">
+    <div class="footer-brand"><span class="logo-icon">🔮</span><span>PHANTOM<span class="highlight">RANGE</span></span></div>
+    <p class="footer-text">PhantomRange v1.0 | NeuralCTF Engine<br>Developed by <a href="https://github.com/issu321" target="_blank">issu321</a></p>
+    <div class="footer-links">
+      <a href="https://github.com/issu321/PhantomRange" target="_blank">Repository</a>
+      <a href="https://github.com/issu321" target="_blank">Developer</a>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
