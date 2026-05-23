@@ -80,14 +80,7 @@ All phases are **sandboxed and simulated**. No real exploitation occurs.
 
 ---
 
-## 📸 Screenshots
 
-> Placeholder: Dashboard with live metrics  
-> Placeholder: Network topology graph  
-> Placeholder: AI Defender feature importance  
-> Placeholder: Hacker terminal event stream
-
----
 
 ## 🛠️ Technologies Used
 
