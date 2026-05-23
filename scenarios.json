@@ -1,0 +1,30 @@
+{
+    "CyberHeist 2077": {
+        "description": "A futuristic financial institution with legacy mainframes and modern cloud APIs.",
+        "nodes": [
+            {"type": "Web Server", "id": "WEB-001"},
+            {"type": "Database", "id": "DB-001"},
+            {"type": "API Gateway", "id": "API-001"},
+            {"type": "Cloud Node", "id": "CLD-001"},
+            {"type": "Workstation", "id": "WS-001"}
+        ]
+    },
+    "Neural Hospital": {
+        "description": "Medical facility with IoT devices and patient data servers.",
+        "nodes": [
+            {"type": "Web Server", "id": "WEB-010"},
+            {"type": "Database", "id": "DB-PATIENTS"},
+            {"type": "Workstation", "id": "WS-NURSE"},
+            {"type": "Cloud Node", "id": "CLD-BACKUP"}
+        ]
+    },
+    "Shadow Grid": {
+        "description": "Power grid control systems with SCADA simulation nodes.",
+        "nodes": [
+            {"type": "Firewall", "id": "FW-SCADA"},
+            {"type": "Workstation", "id": "WS-CONTROL"},
+            {"type": "Database", "id": "DB-LOGS"},
+            {"type": "API Gateway", "id": "API-MONITOR"}
+        ]
+    }
+}
